@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unos brojeva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px; /* Povećajte visinu paddinga za veće input polje */
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unesite listu brojeva odvojenih zarezima ili razmacima:</h1>
+    <form action="/rezultati" method="post">
+        <input type="text" name="unos" required>
+        <input type="submit" value="Pronađi zajedničke brojeve">
+    </form>
+</body>
+</html>
